@@ -4,8 +4,8 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="assets/css/style-inti.css" rel="stylesheet" />
-      <link rel="icon" type="image/png" href="assets/images/logo-INTI.png">
+      <link href="/assets/css/style-inti.css" rel="stylesheet" />
+      <link rel="icon" type="image/png" href="/assets/images/logo-INTI.png">
       <title>Perhimpunan Inti Sukabumi</title>
       <meta name="description" content="">
       <meta name="keywords" content="">
@@ -17,7 +17,7 @@
       <meta property="og:type" content="article" />
       <meta property="og:url" content=""/>
       <!-- Bootstrap -->
-      <link href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    </head>
    <body>
       <div class="topbar">
@@ -28,10 +28,10 @@
             <div class="col-lg-6 col-md-6 col-sm-6">
                <ul class="topbar-socmed">
                   <li>
-                     <a target="_blank" href=""><img src="/assets/images/icon-facebook.png" /></a>
+                     <a target="_blank" href="#"><img src="/assets/images/icon-facebook.png" /></a>
                   </li>
                   <li>
-                     <a target="_blank" href=""><img src="/assets/images/icon-twitter.png" /></a>
+                     <a target="_blank" href="#"><img src="/assets/images/icon-twitter.png" /></a>
                   </li>
                </ul>
             </div>
@@ -40,7 +40,7 @@
       <div class="header">
          <div class="wrapper">
             <div class="row">
-               <div class="col-lg-2 col-md-2 col-sm-3"><a href="#"><img src="assets/images/logo-INTI.png" /></a></div>
+               <div class="col-lg-2 col-md-2 col-sm-3"><a href="#"><img src="/assets/images/logo-INTI.png" /></a></div>
                <div class="col-lg-8 col-md-8 col-sm-6">
                   <form action="" class="navbar-form navbar-left searchbox" role="search" method="post" accept-charset="utf-8" enctype="multipart/form-data">
                      <div class="form-group">
@@ -55,7 +55,7 @@
       </div>
       <div class="mainnav">
          <div class="wrapper">
-            <nav class="navbar navbar-default" role="navigation">
+            <nav class="navbar navbar-default" role="navigation" id="sidebar-menu">
                <div class="container-fluid">
                   <div class="navbar-header">
                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -67,31 +67,28 @@
                   </div>
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                      <ul class="nav navbar-nav">
-                        <li class="active">
+                        <li>
                            <a href="/"><span class="glyphicon glyphicon-home"></span>Home</a>
                         </li>
                         <li class="dropdown">
-                           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tentang INTI <span class="caret"></span></a>
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tentang INTI <span class="caret"></span></a>
                            <ul class="dropdown-menu" role="menu">
                               <li>
-                                 <a href="http://inti.or.id/about_us.html?id=106aaf2b-a4ca-4cdb-b3d1-ee2e25848d9a">Visi Misi</a>
+                                 <a href="<?= base_url('page/visi-misi-inti') ?>">Visi Misi</a>
                               </li>
                               <li>
-                                 <a href="http://inti.or.id/about_us.html?id=18a49780-afff-4959-8aa8-de5321782756">Sejarah INTI</a>
+                                 <a href="<?= base_url('page/sejarah-inti') ?>">Sejarah INTI</a>
                               </li>
                               <li>
-                                 <a href="http://inti.or.id/about_us.html?id=2f017413-20b5-4bdf-a00d-3851cba3cdf1">Anggaran Dasar & Rumah Tangga</a>
-                              </li>
-                              <li>
-                                 <a href="http://inti.or.id/contact_us.html?id=3b37be21-79fb-4871-b07b-05f8d4db44ac">Kontak INTI</a>
+                                 <a href="<?= base_url('page/ad-dan-rt'); ?>">Anggaran Dasar & Rumah Tangga</a>
                               </li>
                            </ul>
                         </li>
                         <li class="dropdown">
-                           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tentang INTI Sukabumi <span class="caret"></span></a>
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tentang INTI Sukabumi <span class="caret"></span></a>
                            <ul class="dropdown-menu" role="menu">
                               <li>
-                                 <a href="http://inti.or.id/about_us.html?id=106aaf2b-a4ca-4cdb-b3d1-ee2e25848d9a">Visi Misi</a>
+                                 <a href="#">Visi Misi</a>
                               </li>
                               <li>
                                  <a href="http://inti.or.id/about_us.html?id=18a49780-afff-4959-8aa8-de5321782756">Sejarah INTI Sukabumi </a>
@@ -105,29 +102,29 @@
                            </ul>
                         </li>
                         <li>
-                           <a href="#" class="menu">Berita</a>
+                           <a href="<?= base_url('news') ?>" class="menu">Berita</a>
                         </li>
                         <li class="dropdown">
-                           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">E-Gallery <span class="caret"></span></a>
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">E-Gallery <span class="caret"></span></a>
                            <ul class="dropdown-menu" role="menu">
                               <li>
-                                 <a href="">Photo Gallery</a>
+                                 <a href="<?= base_url('category/photo-gallery') ?>">Photo Gallery</a>
                               </li>
-                              <li><a href="">Video Gallery</a>
+                              <li><a href="<?= base_url('category/video-gallery') ?>">Video Galler</a>
                               </li>
                            </ul>
                         </li>
-                        <li><a href="" class="menu">Profil Pilihan</a></li>
+                        <li><a href="<?= base_url('category/profil-pilihan') ?>" class="menu">Profil Pilihan</a></li>
                         <li class="dropdown">
-                           <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Xtra INTI <span class="caret"></span></a>
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Xtra INTI <span class="caret"></span></a>
                            <ul class="dropdown-menu" role="menu">
                               <li><a target="_blank" href="http://www.yec-inti.com/about">YEC INTI </a></li>
                               <li><a target="_blank" href="http://www.beasiswapelangi.org">Beasiswa Pelangi </a></li>
-                              <li><a href="">GEMA INTI</a></li>
-                              <li><a href="">PINTI</a></li>
-                              <li><a href="">Akupuntur</a></li>
-                              <li><a href="">Photography</a></li>
-                              <li><a href="">Sekolah Sepakbola</a>
+                              <li><a href="#">GEMA INTI</a></li>
+                              <li><a href="#">PINTI</a></li>
+                              <li><a href="#">Akupuntur</a></li>
+                              <li><a href="#">Photography</a></li>
+                              <li><a href="#">Sekolah Sepakbola</a>
                               </li>
                            </ul>
                         </li>
@@ -139,6 +136,13 @@
             </nav>
          </div>
       </div>
+      <?php if (isset($breadcrumbs)): ?>
+        <div class="content">
+          <div class="wrapper">
+            <?php echo $breadcrumbs ?>
+          </div>
+        </div>
+      <?php endif; ?>
       <!-- start of content -->
       <?php echo (isset($content)) ? $this->load->view($content) : "No Templates Found"; ?>
       <!-- end of content -->
@@ -155,43 +159,43 @@
                         <ul>
                            <li>
                               <a class="media-left media-top" href="http://www,inti..or.id" target="_blank">
-                              <img src="assets/images/photo_gallery/Partner_Logo_pict_no1.png" style="width:120px; height:120px;" /></a>
+                              <img src="/assets/images/photo_gallery/Partner_Logo_pict_no1.png" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
                               <a class="media-left media-top" href="http://bankbhi.co.id/bhi/" target="_blank">
-                              <img src="assets/images/photo_gallery/Partner_Logo_pict_no2.jpg" style="width:120px; height:120px;" /></a>
+                              <img src="/assets/images/photo_gallery/Partner_Logo_pict_no2.jpg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
                               <a class="media-left media-top" href="http://" target="_blank">
-                              <img src="assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                              <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
                               <a class="media-left media-top" href="http://" target="_blank">
-                              <img src="assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                              <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
                               <a class="media-left media-top" href="http://" target="_blank">
-                              <img src="assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                              <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
                               <a class="media-left media-top" href="http://" target="_blank">
-                              <img src="assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                              <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
                               <a class="media-left media-top" href="http://" target="_blank">
-                              <img src="assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                              <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
                               <a class="media-left media-top" href="http://" target="_blank">
-                              <img src="assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                              <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
                               <a class="media-left media-top" href="http://" target="_blank">
-                              <img src="assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                              <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
                               <a class="media-left media-top" href="http://" target="_blank">
-                              <img src="assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                              <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                         </ul>
                      </div>
@@ -241,12 +245,14 @@
          </div>
       </div>
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="assets/js/jquery.js"></script>
+      <script src="/assets/js/jquery.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="assets/vendors/bootstrap/js/bootstrap.js"></script>
-      <script type="text/javascript" src="assets/js/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="assets/js/jquery.jcarousellite.js"></script>
-      <!-- <script type="text/javascript" src="assets/js/calender.js"></script> -->
+      <script src="/assets/vendors/bootstrap/js/bootstrap.js"></script>
+      <script type="text/javascript" src="/assets/js/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="/assets/js/jquery.jcarousellite.js"></script>
+      <!-- <script type="text/javascript" src="/assets/js/calender.js"></script> -->
+      <!-- Custom Scrip -->
+      <script type="text/javascript" src="/assets/js/intismi.js"></script>
       <script>
          $(".partner-carousel").jCarouselLite({
          btnNext: ".partnerslide-next",

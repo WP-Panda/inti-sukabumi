@@ -33,7 +33,7 @@ class Berita_m extends CI_Model
     if($kanal != null):
       $this->db->where('category.category_url', $kanal);
     endif;
-    $this->db->where('DATEDIFF(CURDATE(), article.created_at) <=', 7);
+    // $this->db->where('DATEDIFF(CURDATE(), article.created_at) <=', 7);
     // $this->db->where('article_view >=', 150);
     $this->db->group_by('article.article_id');
     $this->db->order_by('article_view', 'DESC');

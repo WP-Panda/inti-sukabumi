@@ -91,6 +91,15 @@ $route['myadmin/featured/home/video']['get'] = 'admin_featured/index';
 $route['myadmin/featured/home/video']['post'] = 'admin_featured/simpan';
 /*================ home ======================== */
 $route['home']['get'] = 'home/index';
+$route['page/visi-misi-inti']['get'] = 'pages/visi_misi_inti';
+$route['page/sejarah-inti']['get'] = 'pages/sejarah_inti';
+$route['page/ad-dan-rt']['get'] = 'pages/ad_rt';
 
 /*================ Article ======================== */
+$route['news']['get'] = 'kanal/show_kanal';
+$route['news/(:num)']['get'] = 'kanal/show_kanal/$1';
 $route['news/read/(:any)\.html']['get'] = 'article/news_read/$1';
+$route['category/profil-pilihan']['get'] = 'kanal/profil_pilihan/';
+$route['category/profil-pilihan/(:num)']['get'] = 'kanal/profil_pilihan/$1';
+$route['category/(:any)']['get'] = 'kanal/per_category/$1';
+$route['category/(:any)/(:num)']['get'] = 'kanal/per_category/$1/$2';

@@ -9,6 +9,10 @@ class Templates extends FrontEndController
   {
     $this->load->view('main_v', $data);
   }
+  public function get_main_templates($data = null)
+  {
+    $this->load->view('main_v', $data);
+  }
   public function get_mainteance_templates()
   {
     $this->load->view('mainteance_v');

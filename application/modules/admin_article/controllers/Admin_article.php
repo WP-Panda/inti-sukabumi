@@ -56,8 +56,8 @@ class Admin_article extends AdminController {
         $config['source_image'] = $news_thumb;
         $config['create_thumb'] = TRUE;
         $config['maintain_ratio'] = TRUE;
-        $config['width']         = 120;
-        $config['height']       = 90;
+        $config['width']         = 180;
+        $config['height']       = 150;
         $this->load->library('image_lib', $config);
         $this->image_lib->resize();
 

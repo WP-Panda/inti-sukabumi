@@ -1,19 +1,11 @@
-<ul class="list-unstyled top-bordered ex-top-padding">
-  <?php foreach ($list as $key => $value): ?>
-    <li>
-      <a href="<?php echo link_article($value->article_url) ?>">
-        <div class="row">
-          <div class="col-sm-6">
-            <img alt="<?= $value->article_name ?>" src="<?php echo base_url($value->article_image_thumb) ?>" class="img-thumbnail pull-left"  height="100" width="120" >
-          </div>
-          <div class="col-sm-10">
-             <h4><?= $value->article_name ?></h4>
-             <div class="f-sub-info">
-               <p><?= $value->article_summary ?></p>
-             </div>
-          </div>
-        </div>
-      </a>
-    </li>
-  <?php endforeach; ?>
-</ul>
+<?php foreach ($list as $key => $article): ?>
+  <div class="media">
+    <a class="media-left media-top" href="<?= link_article($article->article_url) ?>">
+      <img src="<?= base_url($article->article_image_thumb); ?>" height="65" width="125">
+    </a>
+    <div class="media-body">
+        <p class="timestamp"><?= $this->format->date_indonesia($article->created_at) ?></p>
+        <h2 class="media-heading overflow"><a href="<?= link_article($article->article_url) ?>"><?= $article->article_name ?></a></h2>
+    </div>
+  </div>
+<?php endforeach; ?>

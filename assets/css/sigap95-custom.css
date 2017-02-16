@@ -1,0 +1,104 @@
+hr.footer-divided {
+	border-width: 0.5em;
+	border-color: black;
+}
+.crausel-kalan {
+	background-color: red;
+	position: absolute;
+	font-size: 25px;
+	bottom: 10px;
+	left: 15px;
+	color: black;
+	padding: 10px;
+	border-color: none;
+	font-weight: bold;
+}
+.news-popular {
+	padding: 10px 5px 0px 5px;
+	background-color: #bdb9b9;
+}
+.news-popular h4 {
+	color: white;
+}
+.news-popular p {
+	color: black;
+}
+.news-popular li {
+	border-bottom: 1px solid black !important;
+}
+.judul-konten {
+	padding: 5px;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	background-color: red;
+	width: 100%;
+}
+.judul-feed {
+	background-color: #d4d2d2;
+	padding: 10px;
+	font-size: 25px;
+	color: red;
+	font-weight: bolder;
+}
+.judul-lalin {
+	background-color: black;
+	padding: 10px;
+	font-size: 25px;
+	color: red;
+	font-weight: bolder;
+}
+.news-feed {
+	padding: 10px 5px 5px 5px;
+	background :linear-gradient(red, black);
+	height: 590px;
+	overflow-y: auto;
+}
+.news-feed h4, .news-feed p {
+	color: white;
+}
+.twitter-widget {
+	border-bottom: 1px solid black;
+}
+.kanal-title-home {
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	background-color: red;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	padding: 5px 15px 5px 5px;
+}
+.news-video {
+	border: solid red !important;
+}
+.judul {
+	padding-top: 10px;
+	padding-bottom: 15px;
+	/*line-height: 5px;*/
+}
+.article.image-caption {
+	margin-top: 10px;
+	padding-left: 20px;
+	font-style: italic;
+}
+.article.images {
+	padding-bottom: 5px;
+}
+.article.article-content {
+	margin-top: 10px;
+	color: black !important;
+}
+h3.main-title-dash {
+    width: 100%;
+    color: #e74c3c;
+    text-align: left;
+    border-bottom: 1px solid #e74c3c;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+h3.main-title-dash > span {
+	background-color: white;
+	padding: 10px;
+}
