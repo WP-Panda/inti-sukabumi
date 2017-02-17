@@ -5,7 +5,7 @@ $(document).ready(function() {
     minimumInputLength: 2,
     multiple: true,
     ajax: {
-      url: '/myadmin/article/get/article/',
+      url: '/myadmin/article/get/',
       data: function (params) {
           var queryParameters = {
               article_name: params.term

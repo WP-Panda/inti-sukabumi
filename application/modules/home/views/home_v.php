@@ -5,20 +5,8 @@
    </ol>
    <!-- wrapper for slides -->
    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-         <img src="assets/images/hari_Pahlawan.jpg" alt="Perkokoh Persatuan Membangun Hari Depan Bersama yang Lebih Baik" height='100px' width='500' />
-         <div class="carousel-caption">
-            <h3> Maknai Hari Pahlawan, GEMA INTI dan Beasiswa Pelangi Bangkitkan Spirit 10 November 1945 </h3>
-            <a href="http://inti.or.id/view_article/_Maknai_Hari_Pahlawan,_GEMA_INTI_dan_Beasiswa_Pelangi_Bangkitkan_Spirit_10_November_1945_.html?id=4fe921f5-cf7f-4d0f-a814-498b5036a294" class="bt-mainslider">Read more</a>
-         </div>
-      </div>
-      <div class="item">
-         <img src="assets/images/pbnu.jpg" alt="Perkokoh Persatuan Membangun Hari Depan Bersama yang Lebih Baik" height='100px' width='500' />
-         <div class="carousel-caption">
-            <h3>Perhimpunan INTI Silaturahmi Ke PBNU Pertegas Komitmen Kebangsaan     </h3>
-            <a href="http://inti.or.id/view_article/Perhimpunan_INTI_Silaturahmi_Ke_PBNU_Pertegas_Komitmen_Kebangsaan_____.html?id=4421b146-91c2-4748-af4f-224774486b77" class="bt-mainslider">Read more</a>
-         </div>
-      </div>
+    
+      <?php echo modules::run('berita/get_breaking'); ?>
    </div>
    <!-- controls -->
    <a class="left carousel-control" href="#main-slider" role="button" data-slide="prev">

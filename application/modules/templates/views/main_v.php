@@ -5,6 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="/assets/css/style-inti.css" rel="stylesheet" />
+      <link href="/assets/css/inti-sukabumi.css" rel="stylesheet" />
       <link rel="icon" type="image/png" href="/assets/images/logo-INTI.png">
       <title>Perhimpunan Inti Sukabumi</title>
       <meta name="description" content="">
@@ -18,8 +19,19 @@
       <meta property="og:url" content=""/>
       <!-- Bootstrap -->
       <link href="/assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Addthis  -->
    </head>
    <body>
+
+     <!-- facebook sdk -->
+     <div id="fb-root"></div>
+     <script>(function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.8&appId=1681108218854132";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));</script>
       <div class="topbar">
          <div class="wrapper row">
             <div class="col-lg-6 col-md-6 col-sm-6">
@@ -42,9 +54,9 @@
             <div class="row">
                <div class="col-lg-2 col-md-2 col-sm-3"><a href="#"><img src="/assets/images/logo-INTI.png" /></a></div>
                <div class="col-lg-8 col-md-8 col-sm-6">
-                  <form action="" class="navbar-form navbar-left searchbox" role="search" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+                  <form action="/search/" class="navbar-form navbar-left searchbox" role="search" method="get" accept-charset="utf-8" enctype="multipart/form-data">
                      <div class="form-group">
-                        <input  type="text" class="form-control" name='keyword' id='keyword' placeholder="Search">
+                        <input  type="text" class="form-control" name='keywords' id='keyword' placeholder="Search">
                         <span class="glyphicon glyphicon-search"></span>
                      </div>
                      <button type="submit" class="btn btn-default">Search</button>
@@ -91,13 +103,13 @@
                                  <a href="#">Visi Misi</a>
                               </li>
                               <li>
-                                 <a href="http://inti.or.id/about_us.html?id=18a49780-afff-4959-8aa8-de5321782756">Sejarah INTI Sukabumi </a>
+                                 <a href="#">Sejarah INTI Sukabumi </a>
                               </li>
                               <li>
-                                 <a href="http://inti.or.id/about_us.html?id=2f017413-20b5-4bdf-a00d-3851cba3cdf1">Anggaran Dasar & Rumah Tangga</a>
+                                 <a href="#">Anggaran Dasar & Rumah Tangga</a>
                               </li>
                               <li>
-                                 <a href="http://inti.or.id/contact_us.html?id=3b37be21-79fb-4871-b07b-05f8d4db44ac">Kontak INTI Sukabumi</a>
+                                 <a href="#">Kontak INTI Sukabumi</a>
                               </li>
                            </ul>
                         </li>
@@ -205,12 +217,9 @@
             </div>
             <div class="row">
                <div class="col-lg-4 col-md-4 footer-about">
-                  <h2>About INTI</h2>
+                  <h2>About Inti Sukabumi</h2>
                   <p>
-                  <p>Didirikan di Jakarta di hadapan Notaris James Herman Rahardjo pada 5 Februari 1999&nbsp; oleh 18 Warga Negara Republik Indonesia&nbsp; yang peduli terhadap penyelesaian &ldquo;Masalah Tionghoa&rdquo;.<br />
-                     <br />
-                     Perhimpunan INTI adalah Perhimpunan INTI adalah organisasi yang bersifat kebangsaan sesuai semangat Mukadimah UUD RI 1945, bebas, egaliter, pluralis, inklusif, demokratis, tidak bernaung atau mengikatkan diri kepada salah satu partai politik dan terbuka bagi semua Warga Negara Indonesia yang setuju pada Anggaran Dasar, Anggaran Rumah Tangga, serta Tujuan Perhimpunan INTI.
-                  </p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                   </p>
                </div>
                <div class="col-lg-5 col-md-5 footer-quickmenu">
@@ -240,7 +249,7 @@
                </div>
             </div>
             <div class="row">
-               <div class="col-lg-12 footer-copyright">Copyright 2015 INTI. All Rights Reserved. Powered by <a href='http://www.ifabula.com' target='_blank'>iFabula</a></div>
+               <div class="col-lg-12 footer-copyright">Copyright 2017 Inti Sukabumi. All Rights Reserved. Powered by <a href='<?= $this->config->item("vendor_url") ?>' target='_blank'><?= $this->config->item("vendor_name") ?></a></div>
             </div>
          </div>
       </div>
@@ -268,5 +277,7 @@
                 })
             });
       </script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58a5a8fbb509416a"></script>
    </body>
 </html>
