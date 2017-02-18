@@ -169,44 +169,44 @@
                      <button class="partnerslide-prev"><span class="glyphicon glyphicon-chevron-left"></span></button>
                      <div class="partner-carousel">
                         <ul>
+                          <li>
+                             <a class="media-left media-top" href="#" target="_blank">
+                             <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                          </li>
                            <li>
-                              <a class="media-left media-top" href="http://www,inti..or.id" target="_blank">
-                              <img src="/assets/images/photo_gallery/Partner_Logo_pict_no1.png" style="width:120px; height:120px;" /></a>
-                           </li>
-                           <li>
-                              <a class="media-left media-top" href="http://bankbhi.co.id/bhi/" target="_blank">
-                              <img src="/assets/images/photo_gallery/Partner_Logo_pict_no2.jpg" style="width:120px; height:120px;" /></a>
-                           </li>
-                           <li>
-                              <a class="media-left media-top" href="http://" target="_blank">
+                              <a class="media-left media-top" href="#" target="_blank">
                               <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
-                              <a class="media-left media-top" href="http://" target="_blank">
+                              <a class="media-left media-top" href="#" target="_blank">
                               <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
-                              <a class="media-left media-top" href="http://" target="_blank">
+                              <a class="media-left media-top" href="#" target="_blank">
                               <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
-                              <a class="media-left media-top" href="http://" target="_blank">
+                              <a class="media-left media-top" href="#" target="_blank">
                               <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
-                              <a class="media-left media-top" href="http://" target="_blank">
+                              <a class="media-left media-top" href="#" target="_blank">
                               <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
-                              <a class="media-left media-top" href="http://" target="_blank">
+                              <a class="media-left media-top" href="#" target="_blank">
                               <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
-                              <a class="media-left media-top" href="http://" target="_blank">
+                              <a class="media-left media-top" href="#" target="_blank">
                               <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
-                              <a class="media-left media-top" href="http://" target="_blank">
+                              <a class="media-left media-top" href="#" target="_blank">
+                              <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                           </li>
+                           <li>
+                              <a class="media-left media-top" href="#" target="_blank">
                               <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                         </ul>
@@ -227,11 +227,10 @@
                      <h4>Quick <span>Menu</span></h4>
                   </div>
                   <ul>
-                     <li><a href="http://inti.or.id/"><span class="glyphicon glyphicon-chevron-right"></span> Home</a></li>
-                     <li><a href="http://inti.or.id/about_us.html?id=18a49780-afff-4959-8aa8-de5321782756"><span class="glyphicon glyphicon-chevron-right"></span> Tentang INTI</a></li>
-                     <li><a href="http://inti.or.id/news.html"><span class="glyphicon glyphicon-chevron-right"></span> Berita</a></li>
-                     <li><a href="http://inti.or.id/photo_gallery.html?id=53654df3-a54b-11e4-9df1-9cd21ed1bb04"><span class="glyphicon glyphicon-chevron-right"></span> E-Gallery</a></li>
-                     <li><a href="http://inti.or.id/selected_profile.html"><span class="glyphicon glyphicon-chevron-right"></span> Profil Pilihan</a></li>
+                     <li><a href="<?= base_url('/') ?>"><span class="glyphicon glyphicon-chevron-right"></span> Home</a></li>
+                     <li><a href="<?= base_url('/news') ?>"><span class="glyphicon glyphicon-chevron-right"></span> Berita</a></li>
+                     <li><a href="<?= base_url('/category/photo-gallery') ?>"><span class="glyphicon glyphicon-chevron-right"></span> Photo Gallery</a></li>
+                     <li><a href="<?= base_url('/category/profil-pilihan') ?>"><span class="glyphicon glyphicon-chevron-right"></span> Profil Pilihan</a></li>
                   </ul>
                   <div class="clear"></div>
                </div>
