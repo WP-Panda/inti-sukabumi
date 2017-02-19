@@ -38,4 +38,14 @@ class Pages extends UserController {
     $data['content'] = "pages/ad_rt_v";
     $this->templates->get_main_templates($data);
   }
+  public function inti_sukabumi()
+  {
+    // load Breadcrumbs
+    $this->load->library('breadcrumbs');
+    // $this->breadcrumbs->push('Tentang Inti', '#');
+    $this->breadcrumbs->push('Tentang Inti Sukabumi', '/page/inti-sukabumi');
+    $data['breadcrumbs'] = $this->breadcrumbs->show();
+    $data['content'] = "pages/inti_sukabumi";
+    $this->templates->get_main_templates($data);
+  }
 }

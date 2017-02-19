@@ -94,6 +94,7 @@ $route['home']['get'] = 'home/index';
 $route['page/visi-misi-inti']['get'] = 'pages/visi_misi_inti';
 $route['page/sejarah-inti']['get'] = 'pages/sejarah_inti';
 $route['page/ad-dan-rt']['get'] = 'pages/ad_rt';
+$route['page/inti-sukabumi']['get'] = 'pages/inti_sukabumi';
 
 /*================ Article ======================== */
 $route['news']['get'] = 'kanal/show_kanal';

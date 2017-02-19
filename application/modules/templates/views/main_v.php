@@ -52,7 +52,7 @@
       <div class="header">
          <div class="wrapper">
             <div class="row">
-               <div class="col-lg-2 col-md-2 col-sm-3"><a href="#"><img src="/assets/images/logo-INTI.png" /></a></div>
+               <div class="col-lg-2 col-md-2 col-sm-3"><a href="#"><img class="img-responsive" style="width : 150px;" src="/assets/images/logo-INTI.png" /></a></div>
                <div class="col-lg-8 col-md-8 col-sm-6">
                   <form action="/search/" class="navbar-form navbar-left searchbox" role="search" method="get" accept-charset="utf-8" enctype="multipart/form-data">
                      <div class="form-group">
@@ -96,23 +96,7 @@
                               </li>
                            </ul>
                         </li>
-                        <li class="dropdown">
-                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tentang INTI Sukabumi <span class="caret"></span></a>
-                           <ul class="dropdown-menu" role="menu">
-                              <li>
-                                 <a href="#">Visi Misi</a>
-                              </li>
-                              <li>
-                                 <a href="#">Sejarah INTI Sukabumi </a>
-                              </li>
-                              <li>
-                                 <a href="#">Anggaran Dasar & Rumah Tangga</a>
-                              </li>
-                              <li>
-                                 <a href="#">Kontak INTI Sukabumi</a>
-                              </li>
-                           </ul>
-                        </li>
+                        <li><a href="<?= base_url('page/inti-sukabumi') ?>" class="menu">Tentang Inti Sukabumi</a></li>
                         <li>
                            <a href="<?= base_url('news') ?>" class="menu">Berita</a>
                         </li>

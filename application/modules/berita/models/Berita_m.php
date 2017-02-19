@@ -67,7 +67,7 @@ class Berita_m extends CI_Model
   public function get_breaking($kanal)
   {
     if($kanal == null):
-      $this->db->select('article_name, article_url, article_image, article.created_at, category.category_name')
+      $this->db->select('article_name, article_url, article_image, article.created_at, category.category_name, article_summary, article_image_thumb')
       ->from('breaking')
       ->join('article', 'breaking.article_id = article.article_id')
       ->join('canal' , 'canal.article_id = article.article_id', 'LEFT')
