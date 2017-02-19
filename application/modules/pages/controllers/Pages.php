@@ -10,6 +10,8 @@ class Pages extends UserController {
   }
   public function visi_misi_inti()
   {
+    // meta
+    $data['meta']['title'] = "Visi dan Misi";
     // load Breadcrumbs
     $this->load->library('breadcrumbs');
     $this->breadcrumbs->push('Tentang Inti', '#');
@@ -20,6 +22,8 @@ class Pages extends UserController {
   }
   public function sejarah_inti()
   {
+    // meta
+    $data['meta']['title'] = "Sejarah Inti";
     // load Breadcrumbs
     $this->load->library('breadcrumbs');
     $this->breadcrumbs->push('Tentang Inti', '#');
@@ -30,6 +34,8 @@ class Pages extends UserController {
   }
   public function ad_rt()
   {
+    // meta
+    $data['meta']['title'] = "Anggaran Dasar dan Rumah Tangga";
     // load Breadcrumbs
     $this->load->library('breadcrumbs');
     $this->breadcrumbs->push('Tentang Inti', '#');
@@ -40,6 +46,8 @@ class Pages extends UserController {
   }
   public function inti_sukabumi()
   {
+    // meta
+    $data['meta']['title'] = "Tentang Inti Sukabumi";
     // load Breadcrumbs
     $this->load->library('breadcrumbs');
     // $this->breadcrumbs->push('Tentang Inti', '#');

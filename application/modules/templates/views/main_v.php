@@ -7,16 +7,7 @@
       <link href="/assets/css/style-inti.css" rel="stylesheet" />
       <link href="/assets/css/inti-sukabumi.css" rel="stylesheet" />
       <link rel="icon" type="image/png" href="/assets/images/logo-INTI.png">
-      <title>Perhimpunan Inti Sukabumi</title>
-      <meta name="description" content="">
-      <meta name="keywords" content="">
-      <meta name="author" content="">
-      <meta property="og:image" content="assets/images/logo-INTI.png" />
-      <meta property="og:site_name" content=""/>
-      <meta property="og:title" content="" />
-      <meta property="og:description" content="" />
-      <meta property="og:type" content="article" />
-      <meta property="og:url" content=""/>
+      <?= (isset($meta) ? meta_tags($meta) : meta_tags());?>
       <!-- Bootstrap -->
       <link href="/assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <!-- Addthis  -->
@@ -203,7 +194,7 @@
                <div class="col-lg-4 col-md-4 footer-about">
                   <h2>About Inti Sukabumi</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Perhimpunan INTI adalah Oganisasi yang bersifat kebangsaan sesuai semangat Mukadimah UUD RI 1945, bebas, egaliter, pluralis, inklusif, demokratis, tidak bernaung atau mengikatkan diri kepada salah satu partai politik dan terbuka bagi semua Warga Negara Indonesia yang setuju pada Anggaran Dasar, Anggaran Rumah Tangga, serta Tujuan Perhimpunan INTI.
                   </p>
                </div>
                <div class="col-lg-5 col-md-5 footer-quickmenu">
@@ -224,8 +215,8 @@
                   </div>
                   <div class="row">
                      <ul>
-                        <li><a target="_blank" href="https://www.facebook.com/perhimpunan.inti?fref=ts"><img src="http://inti.or.id/images/icon-facebook-60.png" /></a></li>
-                        <li><a target="_blank" href="https://twitter.com/PerhimpunanINTI"><img src="http://inti.or.id/images/icon-twitter-60.png" /></a></li>
+                        <li><a target="_blank" href="#"><img src="/assets/images/icon-facebook-60.png" /></a></li>
+                        <li><a target="_blank" href="#"><img src="/assets/images/icon-twitter-60.png" /></a></li>
                         <!-- <li><a href="#"><img src="images/icon-rss-60.png" /></a></li> -->
                      </ul>
                   </div>
