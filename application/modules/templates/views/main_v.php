@@ -31,10 +31,10 @@
             <div class="col-lg-6 col-md-6 col-sm-6">
                <ul class="topbar-socmed">
                   <li>
-                     <a target="_blank" href="#"><img src="/assets/images/icon-facebook.png" /></a>
+                     <a target="_blank" href="https://web.facebook.com/profile.php?id=100010569493215&fref=ts"><img src="/assets/images/icon-facebook.png" /></a>
                   </li>
                   <li>
-                     <a target="_blank" href="#"><img src="/assets/images/icon-twitter.png" /></a>
+                     <a target="_blank" href="https://twitter.com/intisukabumi"><img src="/assets/images/icon-twitter.png" /></a>
                   </li>
                </ul>
             </div>
@@ -215,8 +215,8 @@
                   </div>
                   <div class="row">
                      <ul>
-                        <li><a target="_blank" href="#"><img src="/assets/images/icon-facebook-60.png" /></a></li>
-                        <li><a target="_blank" href="#"><img src="/assets/images/icon-twitter-60.png" /></a></li>
+                        <li><a target="_blank" href="https://web.facebook.com/profile.php?id=100010569493215&fref=ts"><img src="/assets/images/icon-facebook-60.png" /></a></li>
+                        <li><a target="_blank" href="https://twitter.com/intisukabumi"><img src="/assets/images/icon-twitter-60.png" /></a></li>
                         <!-- <li><a href="#"><img src="images/icon-rss-60.png" /></a></li> -->
                      </ul>
                   </div>
