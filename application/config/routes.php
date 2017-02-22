@@ -84,7 +84,7 @@ $route['myadmin/article/list']['get'] = 'admin_article/list_';
 $route['myadmin/article/delete/(:num)']['get'] = 'admin_article/hapus/$1';
 $route['myadmin/article/edit/(:num)']['get'] = 'admin_article/edit_view/$1';
 $route['myadmin/article/edit']['post'] = 'admin_article/edit_save';
-$route['myadmin/artiel/get(:any)']['get'] = 'admin_article/get_artilce/$1';
+$route['myadmin/article/get']['get'] = 'admin_article/get_artilce/';
 $route['myadmin/headline/home']['get'] = 'admin_headline/home_headline';
 $route['myadmin/headline/home']['post'] = 'admin_headline/home_headline_add';
 $route['myadmin/featured/home/video']['get'] = 'admin_featured/index';
@@ -94,6 +94,7 @@ $route['home']['get'] = 'home/index';
 $route['page/visi-misi-inti']['get'] = 'pages/visi_misi_inti';
 $route['page/sejarah-inti']['get'] = 'pages/sejarah_inti';
 $route['page/ad-dan-rt']['get'] = 'pages/ad_rt';
+$route['page/inti-sukabumi']['get'] = 'pages/inti_sukabumi';
 
 /*================ Article ======================== */
 $route['news']['get'] = 'kanal/show_kanal';

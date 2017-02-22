@@ -5,20 +5,7 @@
    </ol>
    <!-- wrapper for slides -->
    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-         <img src="assets/images/hari_Pahlawan.jpg" alt="Perkokoh Persatuan Membangun Hari Depan Bersama yang Lebih Baik" height='100px' width='500' />
-         <div class="carousel-caption">
-            <h3> Maknai Hari Pahlawan, GEMA INTI dan Beasiswa Pelangi Bangkitkan Spirit 10 November 1945 </h3>
-            <a href="http://inti.or.id/view_article/_Maknai_Hari_Pahlawan,_GEMA_INTI_dan_Beasiswa_Pelangi_Bangkitkan_Spirit_10_November_1945_.html?id=4fe921f5-cf7f-4d0f-a814-498b5036a294" class="bt-mainslider">Read more</a>
-         </div>
-      </div>
-      <div class="item">
-         <img src="assets/images/pbnu.jpg" alt="Perkokoh Persatuan Membangun Hari Depan Bersama yang Lebih Baik" height='100px' width='500' />
-         <div class="carousel-caption">
-            <h3>Perhimpunan INTI Silaturahmi Ke PBNU Pertegas Komitmen Kebangsaan     </h3>
-            <a href="http://inti.or.id/view_article/Perhimpunan_INTI_Silaturahmi_Ke_PBNU_Pertegas_Komitmen_Kebangsaan_____.html?id=4421b146-91c2-4748-af4f-224774486b77" class="bt-mainslider">Read more</a>
-         </div>
-      </div>
+      <?php echo modules::run('berita/get_breaking'); ?>
    </div>
    <!-- controls -->
    <a class="left carousel-control" href="#main-slider" role="button" data-slide="prev">
@@ -39,43 +26,42 @@
          </div>
       </div>
       <div class="row">
-         <div class="col-lg-3 col-md-3 index-agenda">
-            <div class="section-title">
-               <h4>Agenda <span>Organisasi</span></h4>
-            </div>
-            <div class="section-link"><a href="http://inti.or.id/calendar_event.html">See All</a></div>
-         </div>
-         <div class="col-lg-9 col-md-9 index-beritautama">
+         <div class="col-lg-8 col-md-8 index-beritautama">
             <div class="section-title">
                <h4>Berita <span>Utama</span></h4>
             </div>
             <div class="row">
-               <div class="col-lg-8 col-md-8 col-sm-8 index-beritautama-1">
-                  <a class="thumbnail" href="http://inti.or.id/view_article/Selamat_Jalan,_Pak_Ben!_____.html?id=8572ff39-3bda-4c76-b4f2-65d802798e98" >
-                     <!-- <img src="assets/images/Selamat_Jalan_Pak_Ben__thumb.jpg" data-src="holder.js/10%x50" height="300" width="500" /> -->
-                     <img src="assets/images/Selamat_Jalan_Pak_Ben__thumb.jpg" data-src="holder.js/10%x50" />
-                  </a>
-                  <p class="timestamp">18 Jan 2017 14:18</p>
-                  <h2><a href="http://inti.or.id/view_article/Selamat_Jalan,_Pak_Ben!_____.html?id=8572ff39-3bda-4c76-b4f2-65d802798e98">Selamat Jalan, Pak Ben!     </a></h2>
-                  <p class="overflow"><a href="http://inti.or.id/view_article/Selamat_Jalan,_Pak_Ben!_____.html?id=8572ff39-3bda-4c76-b4f2-65d802798e98">Telah berpulang salah seorang Pendiri dan Wakil Ketua Umum Perhimpunan INTI, bapak Benny Gatot Setiono pada Selasa pagi 17 Januari 2017 di RS Cipto Mangunkusumo Kencana, Jakarta.</a></p>
-               </div>
+              <?php if ($breaking_first != null): ?>
+                <div class="col-lg-8 col-md-8 col-sm-8 index-beritautama-1">
+                   <a class="thumbnail" href="<?= link_article($breaking_first->article_url); ?>" >
+                      <!-- <img src="assets/images/Selamat_Jalan_Pak_Ben__thumb.jpg" data-src="holder.js/10%x50" height="300" width="500" /> -->
+                      <img src="<?= base_url($breaking_first->article_image) ?> "/>
+                   </a>
+                   <p class="timestamp"><?= $this->format->date_indonesia($breaking_first->created_at) ?></p>
+                   <h2><a href="<?= link_article($breaking_first->article_url); ?>"><?= $breaking_first->article_name ?></a></h2>
+                   <p class="overflow"><a href="<?= link_article($breaking_first->article_url); ?>"><?= $breaking_first->article_summary ?></a></p>
+                </div>
+              <?php endif; ?>
                <div class="col-lg-4 col-md-4 col-sm-4 index-beritautama-2">
-                  <div class="index-beritautama-2-box">
-                     <a href="http://inti.or.id/view_article/_MoU_INTI_dan_ICMI.html">
-                     <img src="assets/images/_MoU_INTI_dan_ICMI_thumb.jpeg" data-src="holder.js/10%x50" height="150" width="250" />
-                     </a>
-                     <p class="timestamp">28 Nov 2016 16:02</p>
-                     <h2 class="overflow"><a href="http://inti.or.id/view_article/_MoU_INTI_dan_ICMI.html?id=512fcead-0582-439d-9a00-fe90d2148cb5"> MoU INTI dan ICMI</a></h2>
-                  </div>
-                  <div class="index-beritautama-2-box">
-                     <a href="http://inti.or.id/view_article/_Bangun_Persatuan_dan_Kesatuan,_GEMA_INTI_Sulawesi_Selatan_Adakan_Kejuaraan_Badminton.html">
-                     <img src="assets/images/_Bangun_Persatuan_dan_Kesatuan,_GEMA_INTI_Sulawesi_Selatan_Adakan_Kejuaraan_Badminton_thumb.jpeg" data-src="holder.js/10%x50" height="150" width="250" />
-                     </a>
-                     <p class="timestamp">20 Nov 2016 21:11</p>
-                     <h2 class="overflow"><a href="http://inti.or.id/view_article/_Bangun_Persatuan_dan_Kesatuan,_GEMA_INTI_Sulawesi_Selatan_Adakan_Kejuaraan_Badminton.html?id=51e67694-3828-4ff6-a593-0e8bb3db12d9"> Bangun Persatuan dan Kesatuan, GEMA INTI Sulawesi Selatan Adakan Kejuaraan Badminton</a></h2>
-                  </div>
+                 <?php foreach ($breaking_last as $key => $row): ?>
+                   <div class="index-beritautama-2-box">
+                      <a href="<?= link_article($row->article_url); ?>">
+                      <img src="<?= base_url($row->article_image_thumb) ?>" height="150" width="250" />
+                      </a>
+                      <p class="timestamp"><?= $this->format->date_indonesia($row->created_at) ?></p>
+                      <h2 class="overflow">
+                        <a href="<?= link_article($row->article_url); ?>"> <?= $row->article_name ?> </a></h2>
+                   </div>
+                 <?php endforeach; ?>
                </div>
             </div>
+         </div>
+         <div class="col-lg-4 col-md-4 index-news-section section-beritaprofil">
+            <div class="section-title">
+               <h4>Berita <span>Terbaru</span></h4>
+            </div>
+            <?php echo modules::run('berita/get_feeds') ?>
+            <div class="section-link"><a href="http://inti.or.id/calendar_event.html">See All</a></div>
          </div>
       </div>
       <!-- banner 2 location -->
@@ -95,118 +81,22 @@
             <div class="section-title">
                <h4>Profil <span>Pilihan</span></h4>
             </div>
-            <div class="index-news-section-content">
-               <div class="media">
-                  <a class="media-left media-top" href="http://inti.or.id/view_article/Kuncoro_Wibowo_:_Sebuah_Fenomena_Entrepreneurship_____.html?id=262">
-                     <img src="assets/images/KuncoroKawanLama-500x348.jpg" data-src="holder.js/10%x50" height="100" width="100" />
-                     <div class="media-body">
-                        <p class="timestamp">16 Feb 2015 00:00</p>
-                        <h2 class="media-heading overflow">
-                  <a href="http://inti.or.id/view_article/Kuncoro_Wibowo_:_Sebuah_Fenomena_Entrepreneurship_____.html?id=262">Kuncoro Wibowo : Sebuah Fenomena Entrepreneurship     </a></h2>
-                  <p class="overflow"><a href="http://inti.or.id/view_article/Kuncoro_Wibowo_:_Sebuah_Fenomena_Entrepreneurship_____.html?id=262"><em><span>Dari satu toko kecil  di kawasan Glodok warisan sang ayah, Kuncoro Wibowo  dan adik-adiknya berhasil membangunnya menjadi kerajaan bisnis perkakas terkemuka di Asia Tenggara.  Bagaimana usaha ini bisa meraksasa?</span></em></a></p>
-                  </div>
-               </div>
-               <div class="media">
-                  <a class="media-left media-top" href="http://inti.or.id/view_article/Sumadi_Kusuma________.html?id=245">
-                     <img src="assets/images/Sumadi-Kusuma.jpg" data-src="holder.js/10%x50" height="100" width="100" />
-                     <div class="media-body">
-                        <p class="timestamp">15 Feb 2015 00:00</p>
-                        <h2 class="media-heading overflow">
-                  <a href="http://inti.or.id/view_article/Sumadi_Kusuma________.html?id=245">Sumadi Kusuma        </a></h2>
-                  <p class="overflow"><a href="http://inti.or.id/view_article/Sumadi_Kusuma________.html?id=245">Pepatah mengatakan, hal besar dimulai dari yang kecil. Agaknya prinsip ini yang dimiliki seorang SUMADI KUSUMAdalam menjalankan usahanya. Tak pandang gengsi, ia mulai usaha kargo internasional dari berkantor di bawah pohon.</a></p>
-                  </div>
-               </div>
-               <div class="media">
-                  <a class="media-left media-top" href="http://inti.or.id/view_article/Tokoh_Muda_Indonesia:_Ulung_Rusman___.html?id=525">
-                     <img src="assets/images/UlungRusman.jpg" data-src="holder.js/10%x50" height="100" width="100" />
-                     <div class="media-body">
-                        <p class="timestamp">14 Feb 2015 00:00</p>
-                        <h2 class="media-heading overflow">
-                  <a href="http://inti.or.id/view_article/Tokoh_Muda_Indonesia:_Ulung_Rusman___.html?id=525">Tokoh Muda Indonesia: Ulung Rusman   </a></h2>
-                  <p class="overflow"><a href="http://inti.or.id/view_article/Tokoh_Muda_Indonesia:_Ulung_Rusman___.html?id=525">Ulung Rusman (Wakil Sekjen Perhimpunan INTI) mendapat ucapan selamat dari Presiden RI Susilo Bambang Yudhoyono atas kelulusannya dari Program Pendidikan Reguler Angkatan (PPRA) XLVI LEMHANAS tahun 2011.</a></p>
-                  </div>
-               </div>
-            </div>
-            <div class="section-link"><a href="http://inti.or.id//selected_profile">See All</a></div>
+            <?php echo modules::run('berita/get_feeds' , 'profil-pilihan'); ?>
+            <div class="section-link"><a href="<?= base_url('category/profil-pilihan') ?>">See All</a></div>
          </div>
          <div class="col-lg-4 col-md-4 index-news-section section-beritaopini">
             <div class="section-title">
-               <h4>Berita <span>Daerah</span></h4>
+               <h4>Berita <span>Video</span></h4>
             </div>
-            <div class="index-news-section-content">
-               <div class="media">
-                  <a class="media-left media-top" href="http://inti.or.id/view_article/_Bangun_Persatuan_dan_Kesatuan,_GEMA_INTI_Sulawesi_Selatan_Adakan_Kejuaraan_Badminton.html">
-                     <div class="thumbnail"><img src="assets/images/_Bangun_Persatuan_dan_Kesatuan,_GEMA_INTI_Sulawesi_Selatan_Adakan_Kejuaraan_Badminton_thumb.jpeg" data-src="holder.js/80x80" /></div>
-                     <div class="media-body">
-                        <p class="timestamp">20 Nov 2016 21:11</p>
-                        <h2 class="media-heading overflow">
-                  <a href="http://inti.or.id/view_article/_Bangun_Persatuan_dan_Kesatuan,_GEMA_INTI_Sulawesi_Selatan_Adakan_Kejuaraan_Badminton.html?id=51e67694-3828-4ff6-a593-0e8bb3db12d9">
-                  Bangun Persatuan dan Kesatuan, GEMA INTI Sulawesi Selatan Adakan Kejuaraan Badminton</a>
-                  </h2>
-                  <!-- <p class="overflow"><a href="http://inti.or.id/view_article/_Bangun_Persatuan_dan_Kesatuan,_GEMA_INTI_Sulawesi_Selatan_Adakan_Kejuaraan_Badminton.html?id=51e67694-3828-4ff6-a593-0e8bb3db12d9">Pengurus Daerah GEMA INTI Sulawesi Selatan (GEMA INTI Sulsel) akan mengadakan kejuaraan badminton bertajuk “GEMA INTI Badminton Tournament I” pada</a></p> -->
-                  </div>
-               </div>
-               <div class="media">
-                  <a class="media-left media-top" href="http://inti.or.id/view_article/_INTI_Sulsel_Adakan_Sosialisasi_Tax_Amnesty_Kepada_Komunitas_Tionghoa_di_Makassar_____.html">
-                     <div class="thumbnail"><img src="assets/images/_INTI_Sulsel_Adakan_Sosialisasi_Tax_Amnesty_Kepada_Komunitas_Tionghoa_di_Makassar_thumb.jpg" data-src="holder.js/80x80" /></div>
-                     <div class="media-body">
-                        <p class="timestamp">14 Aug 2016 18:02</p>
-                        <h2 class="media-heading overflow">
-                  <a href="http://inti.or.id/view_article/_INTI_Sulsel_Adakan_Sosialisasi_Tax_Amnesty_Kepada_Komunitas_Tionghoa_di_Makassar_____.html?id=e5015e50-0762-4d46-95a6-47426560a138">
-                  INTI Sulsel Adakan Sosialisasi Tax Amnesty Kepada Komunitas Tionghoa di Makassar     </a>
-                  </h2>
-                  <!-- <p class="overflow"><a href="http://inti.or.id/view_article/_INTI_Sulsel_Adakan_Sosialisasi_Tax_Amnesty_Kepada_Komunitas_Tionghoa_di_Makassar_____.html?id=e5015e50-0762-4d46-95a6-47426560a138">Menanggapi kebingungan yang melanda masyarakat dan komunitas Tionghoa di Makassar, Pengurus Daerah Perhimpunan INTI Sulawesi Selatan (INTI Sulsel) ber</a></p> -->
-                  </div>
-               </div>
-               <div class="media">
-                  <a class="media-left media-top" href="http://inti.or.id/view_article/_Jalan_Santai_INTI_Sulawesi_Selatan_Bangga_Menjadi_Indonesia.html">
-                     <div class="thumbnail"><img src="assets/images/_Jalan_Santai_INTI_Sulawesi_Selatan_Bangga_Menjadi_Indonesia_thumb.JPG" data-src="holder.js/80x80" /></div>
-                     <div class="media-body">
-                        <p class="timestamp">08 Jan 2016 11:21</p>
-                        <h2 class="media-heading overflow">
-                  <a href="http://inti.or.id/view_article/_Jalan_Santai_INTI_Sulawesi_Selatan_Bangga_Menjadi_Indonesia.html?id=bfcb9c18-e286-4b71-a046-f813151fc2e2">
-                  Jalan Santai INTI Sulawesi Selatan "Bangga Menjadi Indonesia"</a>
-                  </h2>
-                  <!-- <p class="overflow"><a href="http://inti.or.id/view_article/_Jalan_Santai_INTI_Sulawesi_Selatan_Bangga_Menjadi_Indonesia.html?id=bfcb9c18-e286-4b71-a046-f813151fc2e2"></a></p> -->
-                  </div>
-               </div>
-            </div>
-            <div class="section-link"><a href="http://inti.or.id//news">See All</a></div>
+            <?php echo modules::run('berita/get_feeds' , 'video-gallery'); ?>
+            <div class="section-link"><a href="<?= base_url('category/video-gallery') ?>">See All</a></div>
          </div>
          <div class="col-lg-4 col-md-4 index-news-section section-photovideo">
             <div class="section-title">
-               <h4>Photo &amp; <span>Video</span></h4>
+               <h4>Gallery<span>Foto</span></h4>
             </div>
-            <div class="index-news-section-content">
-               <div class="media">
-                  <a class="media-left media-top" href="#">
-                     <div class="thumbnail"><img src="assets/images/photo_gallery/Tionghoa_Dalam_Pusaran_Politik.jpg" /></div>
-                  </a>
-                  <div class="media-body">
-                     <p class="timestamp">30 Jun 2016 10:11</p>
-                     <h2 class="media-heading overflow"><a href="http://inti.or.id/view_photo/Tionghoa_Dalam_Pusaran_Politik.html">Tionghoa Dalam Pusaran Politik</a></h2>
-                  </div>
-               </div>
-               <div class="media">
-                  <a class="media-left media-top" href="#">
-                     <div class="thumbnail"><img src="assets/images/photo_gallery/HUT_Ke-7_Beasiswa_Pelangi_INTI.jpg" /></div>
-                  </a>
-                  <div class="media-body">
-                     <p class="timestamp">03 May 2015 21:34</p>
-                     <h2 class="media-heading overflow"><a href="http://inti.or.id/view_photo/HUT_Ke-7_Beasiswa_Pelangi_INTI.html">HUT Ke-7 Beasiswa Pelangi INTI</a></h2>
-                  </div>
-               </div>
-               <div class="media">
-                  <a class="media-left media-top" href="#">
-                     <div class="thumbnail"><img src="assets/images/photo_gallery/Perhimpunan_INTI_DKI_Jakarta_Gelar_Dialog_Kesehatan_Anti-aging_dan_Perawatan_Diabetes,_Darah_Tinggi_Serta_Kolesterol_.jpg" /></div>
-                  </a>
-                  <div class="media-body">
-                     <p class="timestamp">20 Apr 2015 15:16</p>
-                     <h2 class="media-heading overflow"><a href="http://inti.or.id/view_photo/Perhimpunan_INTI_DKI_Jakarta_Gelar_Dialog_Kesehatan_Anti-aging_dan_Perawatan_Diabetes,_Darah_Tinggi_.html">Perhimpunan INTI DKI Jakarta Gelar Dialog Kesehatan Anti-aging dan Perawatan Diabetes, Darah Tinggi </a></h2>
-                  </div>
-               </div>
-            </div>
-            <div class="section-link"><a href="http://inti.or.id//photo_gallery">See All</a></div>
+            <?php echo modules::run('berita/get_feeds' , 'photo-gallery'); ?>
+            <div class="section-link"><a href="<?= base_url('category/photo-gallery') ?>">See All</a></div>
          </div>
       </div>
       <div class="row">

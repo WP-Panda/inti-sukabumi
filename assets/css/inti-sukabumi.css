@@ -1,0 +1,13 @@
+.article-area {
+  margin-top: 10px;
+}
+.judul {
+  
+}
+.article.subject {
+  font-size: 2em;
+}
+.article.images>img {
+  margin-bottom: 10px;
+  width: 100% !important;
+}

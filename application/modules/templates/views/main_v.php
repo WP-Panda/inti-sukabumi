@@ -5,21 +5,24 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="/assets/css/style-inti.css" rel="stylesheet" />
+      <link href="/assets/css/inti-sukabumi.css" rel="stylesheet" />
       <link rel="icon" type="image/png" href="/assets/images/logo-INTI.png">
-      <title>Perhimpunan Inti Sukabumi</title>
-      <meta name="description" content="">
-      <meta name="keywords" content="">
-      <meta name="author" content="">
-      <meta property="og:image" content="assets/images/logo-INTI.png" />
-      <meta property="og:site_name" content=""/>
-      <meta property="og:title" content="" />
-      <meta property="og:description" content="" />
-      <meta property="og:type" content="article" />
-      <meta property="og:url" content=""/>
+      <?= (isset($meta) ? meta_tags($meta) : meta_tags());?>
       <!-- Bootstrap -->
       <link href="/assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Addthis  -->
    </head>
    <body>
+
+     <!-- facebook sdk -->
+     <div id="fb-root"></div>
+     <script>(function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.8&appId=1681108218854132";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));</script>
       <div class="topbar">
          <div class="wrapper row">
             <div class="col-lg-6 col-md-6 col-sm-6">
@@ -28,10 +31,10 @@
             <div class="col-lg-6 col-md-6 col-sm-6">
                <ul class="topbar-socmed">
                   <li>
-                     <a target="_blank" href="#"><img src="/assets/images/icon-facebook.png" /></a>
+                     <a target="_blank" href="https://web.facebook.com/profile.php?id=100010569493215&fref=ts"><img src="/assets/images/icon-facebook.png" /></a>
                   </li>
                   <li>
-                     <a target="_blank" href="#"><img src="/assets/images/icon-twitter.png" /></a>
+                     <a target="_blank" href="https://twitter.com/intisukabumi"><img src="/assets/images/icon-twitter.png" /></a>
                   </li>
                </ul>
             </div>
@@ -40,11 +43,11 @@
       <div class="header">
          <div class="wrapper">
             <div class="row">
-               <div class="col-lg-2 col-md-2 col-sm-3"><a href="#"><img src="/assets/images/logo-INTI.png" /></a></div>
+               <div class="col-lg-2 col-md-2 col-sm-3"><a href="#"><img class="img-responsive" style="width : 150px;" src="/assets/images/logo-INTI.png" /></a></div>
                <div class="col-lg-8 col-md-8 col-sm-6">
-                  <form action="" class="navbar-form navbar-left searchbox" role="search" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+                  <form action="/search/" class="navbar-form navbar-left searchbox" role="search" method="get" accept-charset="utf-8" enctype="multipart/form-data">
                      <div class="form-group">
-                        <input  type="text" class="form-control" name='keyword' id='keyword' placeholder="Search">
+                        <input  type="text" class="form-control" name='keywords' id='keyword' placeholder="Search">
                         <span class="glyphicon glyphicon-search"></span>
                      </div>
                      <button type="submit" class="btn btn-default">Search</button>
@@ -84,23 +87,7 @@
                               </li>
                            </ul>
                         </li>
-                        <li class="dropdown">
-                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tentang INTI Sukabumi <span class="caret"></span></a>
-                           <ul class="dropdown-menu" role="menu">
-                              <li>
-                                 <a href="#">Visi Misi</a>
-                              </li>
-                              <li>
-                                 <a href="http://inti.or.id/about_us.html?id=18a49780-afff-4959-8aa8-de5321782756">Sejarah INTI Sukabumi </a>
-                              </li>
-                              <li>
-                                 <a href="http://inti.or.id/about_us.html?id=2f017413-20b5-4bdf-a00d-3851cba3cdf1">Anggaran Dasar & Rumah Tangga</a>
-                              </li>
-                              <li>
-                                 <a href="http://inti.or.id/contact_us.html?id=3b37be21-79fb-4871-b07b-05f8d4db44ac">Kontak INTI Sukabumi</a>
-                              </li>
-                           </ul>
-                        </li>
+                        <li><a href="<?= base_url('page/inti-sukabumi') ?>" class="menu">Tentang Inti Sukabumi</a></li>
                         <li>
                            <a href="<?= base_url('news') ?>" class="menu">Berita</a>
                         </li>
@@ -157,44 +144,44 @@
                      <button class="partnerslide-prev"><span class="glyphicon glyphicon-chevron-left"></span></button>
                      <div class="partner-carousel">
                         <ul>
+                          <li>
+                             <a class="media-left media-top" href="#" target="_blank">
+                             <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                          </li>
                            <li>
-                              <a class="media-left media-top" href="http://www,inti..or.id" target="_blank">
-                              <img src="/assets/images/photo_gallery/Partner_Logo_pict_no1.png" style="width:120px; height:120px;" /></a>
-                           </li>
-                           <li>
-                              <a class="media-left media-top" href="http://bankbhi.co.id/bhi/" target="_blank">
-                              <img src="/assets/images/photo_gallery/Partner_Logo_pict_no2.jpg" style="width:120px; height:120px;" /></a>
-                           </li>
-                           <li>
-                              <a class="media-left media-top" href="http://" target="_blank">
+                              <a class="media-left media-top" href="#" target="_blank">
                               <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
-                              <a class="media-left media-top" href="http://" target="_blank">
+                              <a class="media-left media-top" href="#" target="_blank">
                               <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
-                              <a class="media-left media-top" href="http://" target="_blank">
+                              <a class="media-left media-top" href="#" target="_blank">
                               <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
-                              <a class="media-left media-top" href="http://" target="_blank">
+                              <a class="media-left media-top" href="#" target="_blank">
                               <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
-                              <a class="media-left media-top" href="http://" target="_blank">
+                              <a class="media-left media-top" href="#" target="_blank">
                               <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
-                              <a class="media-left media-top" href="http://" target="_blank">
+                              <a class="media-left media-top" href="#" target="_blank">
                               <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
-                              <a class="media-left media-top" href="http://" target="_blank">
+                              <a class="media-left media-top" href="#" target="_blank">
                               <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
-                              <a class="media-left media-top" href="http://" target="_blank">
+                              <a class="media-left media-top" href="#" target="_blank">
+                              <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                           </li>
+                           <li>
+                              <a class="media-left media-top" href="#" target="_blank">
                               <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
                            </li>
                         </ul>
@@ -205,12 +192,9 @@
             </div>
             <div class="row">
                <div class="col-lg-4 col-md-4 footer-about">
-                  <h2>About INTI</h2>
+                  <h2>About Inti Sukabumi</h2>
                   <p>
-                  <p>Didirikan di Jakarta di hadapan Notaris James Herman Rahardjo pada 5 Februari 1999&nbsp; oleh 18 Warga Negara Republik Indonesia&nbsp; yang peduli terhadap penyelesaian &ldquo;Masalah Tionghoa&rdquo;.<br />
-                     <br />
-                     Perhimpunan INTI adalah Perhimpunan INTI adalah organisasi yang bersifat kebangsaan sesuai semangat Mukadimah UUD RI 1945, bebas, egaliter, pluralis, inklusif, demokratis, tidak bernaung atau mengikatkan diri kepada salah satu partai politik dan terbuka bagi semua Warga Negara Indonesia yang setuju pada Anggaran Dasar, Anggaran Rumah Tangga, serta Tujuan Perhimpunan INTI.
-                  </p>
+                    Perhimpunan INTI adalah Oganisasi yang bersifat kebangsaan sesuai semangat Mukadimah UUD RI 1945, bebas, egaliter, pluralis, inklusif, demokratis, tidak bernaung atau mengikatkan diri kepada salah satu partai politik dan terbuka bagi semua Warga Negara Indonesia yang setuju pada Anggaran Dasar, Anggaran Rumah Tangga, serta Tujuan Perhimpunan INTI.
                   </p>
                </div>
                <div class="col-lg-5 col-md-5 footer-quickmenu">
@@ -218,11 +202,10 @@
                      <h4>Quick <span>Menu</span></h4>
                   </div>
                   <ul>
-                     <li><a href="http://inti.or.id/"><span class="glyphicon glyphicon-chevron-right"></span> Home</a></li>
-                     <li><a href="http://inti.or.id/about_us.html?id=18a49780-afff-4959-8aa8-de5321782756"><span class="glyphicon glyphicon-chevron-right"></span> Tentang INTI</a></li>
-                     <li><a href="http://inti.or.id/news.html"><span class="glyphicon glyphicon-chevron-right"></span> Berita</a></li>
-                     <li><a href="http://inti.or.id/photo_gallery.html?id=53654df3-a54b-11e4-9df1-9cd21ed1bb04"><span class="glyphicon glyphicon-chevron-right"></span> E-Gallery</a></li>
-                     <li><a href="http://inti.or.id/selected_profile.html"><span class="glyphicon glyphicon-chevron-right"></span> Profil Pilihan</a></li>
+                     <li><a href="<?= base_url('/') ?>"><span class="glyphicon glyphicon-chevron-right"></span> Home</a></li>
+                     <li><a href="<?= base_url('/news') ?>"><span class="glyphicon glyphicon-chevron-right"></span> Berita</a></li>
+                     <li><a href="<?= base_url('/category/photo-gallery') ?>"><span class="glyphicon glyphicon-chevron-right"></span> Photo Gallery</a></li>
+                     <li><a href="<?= base_url('/category/profil-pilihan') ?>"><span class="glyphicon glyphicon-chevron-right"></span> Profil Pilihan</a></li>
                   </ul>
                   <div class="clear"></div>
                </div>
@@ -232,15 +215,15 @@
                   </div>
                   <div class="row">
                      <ul>
-                        <li><a target="_blank" href="https://www.facebook.com/perhimpunan.inti?fref=ts"><img src="http://inti.or.id/images/icon-facebook-60.png" /></a></li>
-                        <li><a target="_blank" href="https://twitter.com/PerhimpunanINTI"><img src="http://inti.or.id/images/icon-twitter-60.png" /></a></li>
+                        <li><a target="_blank" href="https://web.facebook.com/profile.php?id=100010569493215&fref=ts"><img src="/assets/images/icon-facebook-60.png" /></a></li>
+                        <li><a target="_blank" href="https://twitter.com/intisukabumi"><img src="/assets/images/icon-twitter-60.png" /></a></li>
                         <!-- <li><a href="#"><img src="images/icon-rss-60.png" /></a></li> -->
                      </ul>
                   </div>
                </div>
             </div>
             <div class="row">
-               <div class="col-lg-12 footer-copyright">Copyright 2015 INTI. All Rights Reserved. Powered by <a href='http://www.ifabula.com' target='_blank'>iFabula</a></div>
+               <div class="col-lg-12 footer-copyright">Copyright 2017 Inti Sukabumi. All Rights Reserved. Powered by <a href='<?= $this->config->item("vendor_url") ?>' target='_blank'><?= $this->config->item("vendor_name") ?></a></div>
             </div>
          </div>
       </div>
@@ -268,5 +251,7 @@
                 })
             });
       </script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58a5a8fbb509416a"></script>
    </body>
 </html>

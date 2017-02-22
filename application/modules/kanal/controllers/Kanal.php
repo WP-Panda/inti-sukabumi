@@ -8,6 +8,10 @@ class Kanal extends BeritaController
   }
   public function show_kanal($page = null)
   {
+    // meta
+    $data['meta']['title'] = ($page != null) ? "Berita Halaman " . $page : "Berita";
+    $data['meta']['desc'] = ($page != null) ? "Lihat berita halaman " . $page : "Berita seputar Inti";
+
     $this->load->library('pagination');
     $mydata = $this->db->get('article');
     //konfigurasi untuk pagination
@@ -66,6 +70,8 @@ class Kanal extends BeritaController
   public function per_category($category_url = null , $page = null)
   {
 
+
+
     $this->load->library('pagination');
     $mydata = $this->kanal_m->ambil_berita_per_category_full($category_url);
     //konfigurasi untuk pagination
@@ -119,6 +125,9 @@ class Kanal extends BeritaController
 		}
     $category_data = $this->db->get_where('category' , ['category_url' => $category_url]);
     $data['category'] = $category_data->row();
+    // meta
+    $data['meta']['title'] = ($page != null) ? $data['category']->category_name . " halaman " . $page : $data['category']->category_name;
+
     $result = $this->kanal_m->ambil_berita_per_category($category_url , $config['per_page']  , $offset);
     $data['highligh'] = $this->kanal_m->ambil_berita_per_category($category_url , 4  , 0);
     $data['articles'] = $result;
@@ -128,6 +137,8 @@ class Kanal extends BeritaController
   public function profil_pilihan($page = null)
   {
     $category_url = "profil-pilihan";
+    // meta
+    $data['meta']['title'] = ($page != null) ? "Profil Pilihan halaman " . $page : "Profil Pilihan";
     $this->load->library('pagination');
     $mydata = $this->kanal_m->ambil_berita_per_category_full($category_url);
     //konfigurasi untuk pagination
