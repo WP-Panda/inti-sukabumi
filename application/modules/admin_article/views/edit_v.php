@@ -23,6 +23,7 @@ add_js(base_url('assets/js/article.js'));
             <div class="slim"
                data-label="Tarik gambar anda kesini"
                accept="image/jpeg"
+               data-jpeg-compressio="100"
                data-size="640,640"
                data-ratio="16:9">
                <img src="<?php echo base_url($article->article_image) ?>"/>

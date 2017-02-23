@@ -146,19 +146,19 @@
                         <ul>
                           <li>
                              <a class="media-left media-top" href="#" target="_blank">
-                             <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                             <img src="/assets/images/partner/Logo-SLM-Final.png" style="width:120px; height:120px;" /></a>
                           </li>
                            <li>
                               <a class="media-left media-top" href="#" target="_blank">
-                              <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                              <img src="/assets/images/partner/mapping-landscape.jpg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
                               <a class="media-left media-top" href="#" target="_blank">
-                              <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                              <img src="/assets/images/partner/royaltea.png" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
                               <a class="media-left media-top" href="#" target="_blank">
-                              <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                              <img src="/assets/images/partner/semerbak.png" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
                               <a class="media-left media-top" href="#" target="_blank">
