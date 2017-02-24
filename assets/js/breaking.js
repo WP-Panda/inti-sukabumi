@@ -25,6 +25,32 @@ $(document).ready(function() {
     }
   });
 
+  $(".select2-single").select2({
+    placeholder: 'Pilih Artikel yang akan ditampilan',
+    minimumInputLength: 1,
+    minimumInputLength: 2,
+    multiple: false,
+    ajax: {
+      url: '/myadmin/article/get/',
+      data: function (params) {
+          var queryParameters = {
+              article_name: params.term
+          }
+          return queryParameters;
+      },
+      processResults: function (data) {
+        return {
+          results: $.map(data, function (item) {
+              return {
+                  text: item.article_name,
+                  id: item.article_id
+              }
+          })
+      };
+      }
+    }
+  });
+
 
   $(".featured-video-news").select2({
     placeholder: 'Pilih Artikel yang akan ditampilan',

@@ -89,6 +89,9 @@ $route['myadmin/headline/home']['get'] = 'admin_headline/home_headline';
 $route['myadmin/headline/home']['post'] = 'admin_headline/home_headline_add';
 $route['myadmin/featured/home/video']['get'] = 'admin_featured/index';
 $route['myadmin/featured/home/video']['post'] = 'admin_featured/simpan';
+$route['myadmin/gallery/new']['get'] = 'admin_images/index';
+$route['myadmin/gallery/new']['post'] = 'admin_images/postData';
+
 /*================ home ======================== */
 $route['home']['get'] = 'home/index';
 $route['page/visi-misi-inti']['get'] = 'pages/visi_misi_inti';
