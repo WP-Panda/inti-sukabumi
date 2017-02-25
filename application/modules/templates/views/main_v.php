@@ -97,7 +97,7 @@
                               <li>
                                  <a href="<?= base_url('category/photo-gallery') ?>">Photo Gallery</a>
                               </li>
-                              <li><a href="<?= base_url('category/video-gallery') ?>">Video Galler</a>
+                              <li><a href="<?= base_url('category/video-gallery') ?>">Video Gallery</a>
                               </li>
                            </ul>
                         </li>
@@ -146,19 +146,19 @@
                         <ul>
                           <li>
                              <a class="media-left media-top" href="#" target="_blank">
-                             <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                             <img src="/assets/images/partner/Logo-SLM-Final.png" style="width:120px; height:120px;" /></a>
                           </li>
                            <li>
                               <a class="media-left media-top" href="#" target="_blank">
-                              <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                              <img src="/assets/images/partner/mapping-landscape.jpg" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
                               <a class="media-left media-top" href="#" target="_blank">
-                              <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                              <img src="/assets/images/partner/royaltea.png" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
                               <a class="media-left media-top" href="#" target="_blank">
-                              <img src="/assets/images/default.jpeg" style="width:120px; height:120px;" /></a>
+                              <img src="/assets/images/partner/semerbak.png" style="width:120px; height:120px;" /></a>
                            </li>
                            <li>
                               <a class="media-left media-top" href="#" target="_blank">
@@ -191,13 +191,13 @@
                </div>
             </div>
             <div class="row">
-               <div class="col-lg-4 col-md-4 footer-about">
+               <div class="col-lg-3 col-md-4 footer-about">
                   <h2>About Inti Sukabumi</h2>
                   <p>
                     Perhimpunan INTI adalah Oganisasi yang bersifat kebangsaan sesuai semangat Mukadimah UUD RI 1945, bebas, egaliter, pluralis, inklusif, demokratis, tidak bernaung atau mengikatkan diri kepada salah satu partai politik dan terbuka bagi semua Warga Negara Indonesia yang setuju pada Anggaran Dasar, Anggaran Rumah Tangga, serta Tujuan Perhimpunan INTI.
                   </p>
                </div>
-               <div class="col-lg-5 col-md-5 footer-quickmenu">
+               <div class="col-lg-4 col-md-5 footer-quickmenu">
                   <div class="section-title">
                      <h4>Quick <span>Menu</span></h4>
                   </div>
@@ -220,6 +220,25 @@
                         <!-- <li><a href="#"><img src="images/icon-rss-60.png" /></a></li> -->
                      </ul>
                   </div>
+               </div>
+               <div class="col-lg-2 col-md-3 footer-socmed">
+                  <div class="section-title">
+                     <h4>Visitor <span>Count</span></h4>
+                  </div>
+                      <div id="histats_counter"></div>
+                      <script type="text/javascript">
+                      var _Hasync= _Hasync|| [];
+                      _Hasync.push(['Histats.start', '1,3742948,4,102,102,47,00010000']);
+                      _Hasync.push(['Histats.fasi', '1']);
+                      _Hasync.push(['Histats.track_hits', '']);
+                      (function() {
+                      var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+                      hs.src = ('//s10.histats.com/js15_as.js');
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+                      })();
+                      </script>
+                      <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?3742948&101" alt="" border="0"></a></noscript>
+                      <!-- Histats.com  END  -->
                </div>
             </div>
             <div class="row">

@@ -49,7 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'maintenance/tampil';
+$route['default_controller'] = 'home/index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['demo'] = 'maintenance/demo';
@@ -107,3 +107,6 @@ $route['category/profil-pilihan']['get'] = 'kanal/profil_pilihan/';
 $route['category/profil-pilihan/(:num)']['get'] = 'kanal/profil_pilihan/$1';
 $route['category/(:any)']['get'] = 'kanal/per_category/$1';
 $route['category/(:any)/(:num)']['get'] = 'kanal/per_category/$1/$2';
+
+/*================ Sitemaps ======================== */
+$route['sitemap\.xml'] = "sitemaps/index";

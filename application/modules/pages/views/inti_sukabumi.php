@@ -19,7 +19,7 @@
                   Wira-Usaha, Dokumentasi & IT, Organisasi dan Kaderisasi ; Kesehatan, Sosial Komunikasi dan Humas ; Pemuda & Olah Raga, Hukum & Advokasi dan Parawisata ; Pendidikan, Seni & Budaya dan Pemberdayaan Perempuan
                 </p>
                 <p>
-                  Alamat Sekretariat sementara : Gedung Perkumpulan Warga Yong Chun Sukabumi, Ruko Danalaga Square Blok G No. 10, Jl. Pejagalan ( Odeon ) – Kota Sukabumi
+                  Alamat sekretariat Perhimpunan Indonesia Tionghoa (INTI) Kota Sukabumi Jl. R.Syamsudin, SH No.31 Cikole – Sukabumi 43112 No.telp 0899.890.8807
                 </p>
                 <p>
                   <b>Bpk. Titih Sugandi</b> menjabat sebagai Ketua Perhimpunan INTI Kota Sukabumi berharap melalui wadah Perhimpunan INTI Kota Sukabumi ini, dapat mempersatukan Warga Tionghoa Sukabumi tanpa membeda-bedakan ( lintas ) Suku, Agama, Perkumpulan, Status dan Golongan. Serta memotivasi agar etnis Tionghoa tidak saja bergelut dibidang usaha atau perdagangan, tapi bisa pula bergelut dibidang seperti pendidikan, sosial dan lain sebagainya
@@ -66,28 +66,29 @@
                 <td style="text-align: justify;">0819&nbsp;3278&nbsp;2488</td>
                 </tr>
                 <tr>
-                <td style="text-align: justify;">Wakil&nbsp;Ketua</td>
+                <td style="text-align: justify;">Waketu koor bid.kaderisasi & wirausaha</td>
                 <td style="text-align: justify;">:</td>
                 <td style="text-align: justify;">Benardy</td>
                 <td style="text-align: justify;">08&nbsp;1111&nbsp;5069</td>
                 </tr>
                 <tr>
-                <td style="text-align: justify;">Wakil&nbsp;Ketua</td>
-                <td style="text-align: justify;">:</td>
-                <td style="text-align: justify;">Hendy&nbsp;Effendy</td>
-                <td style="text-align: justify;">0266&nbsp;222&nbsp;947</td>
+	                <td style="text-align: justify;">Waketu koor bid.Pendidikan, Seni & Budaya</td>
+	                <td style="text-align: justify;">:</td>
+	                <td style="text-align: justify;">Satrio&nbsp;Hukin&nbsp;Pramoto</td>
+	                <td style="text-align: justify;">0895&nbsp;0316&nbsp;7738</td>
                 </tr>
                 <tr>
-                <td style="text-align: justify;">Wakil&nbsp;Ketua</td>
-                <td style="text-align: justify;">:</td>
-                <td style="text-align: justify;">Satrio&nbsp;Hukin&nbsp;Pramoto</td>
-                <td style="text-align: justify;">0895&nbsp;0316&nbsp;7738</td>
+	                <td style="text-align: justify;">Waketu koor bid.Sosial, Kesehatan & Lingkungan</td>
+	                <td style="text-align: justify;">:</td>
+	                <td style="text-align: justify;">Prasetyo Halim Lenggono</td>
+	                <td style="text-align: justify;">-</td>
                 </tr>
+               
                 <tr>
-                <td style="text-align: justify;">Wakil&nbsp;Ketua&nbsp;</td>
-                <td style="text-align: justify;">:</td>
-                <td style="text-align: justify;">wan&nbsp;Iskandar</td>
-                <td style="text-align: justify;">-</td>
+	                <td style="text-align: justify;">Waketu koor bid.Advokasi & Hukum</td>
+	                <td style="text-align: justify;">:</td>
+	                <td style="text-align: justify;">Gunawan, SH</td>
+	                <td style="text-align: justify;">-</td>
                 </tr>
                 <tr>
                 <td style="text-align: justify;">Wakil&nbsp;Ketua&nbsp;</td>
@@ -102,41 +103,64 @@
                 <td style="text-align: justify;">-</td>
                 </tr>
                 <tr>
-                <td style="text-align: justify;">Sekretaris</td>
-                <td style="text-align: justify;">:</td>
-                <td style="text-align: justify;">Yanto&nbsp;Gunawan</td>
-                <td>08164871010
-                </td>
+	                <td style="text-align: justify;">Sekretaris Umum</td>
+	                <td style="text-align: justify;">:</td>
+	                <td style="text-align: justify;">Yanto&nbsp;Gunawan</td>
+	                <td>08164871010</td>
                 </tr>
                 <tr>
-                <td style="text-align: justify;">Sekretaris&nbsp;I</td>
-                <td style="text-align: justify;">:</td>
-                <td style="text-align: justify;">Stefanus&nbsp;Theddy&nbsp;U</td>
-                <td style="text-align: justify;">0813&nbsp;1514&nbsp;5555</td>
+	                <td style="text-align: justify;">Sekretaris&nbsp;I</td>
+	                <td style="text-align: justify;">:</td>
+	                <td style="text-align: justify;">Yosephine Windya S. SE</td>
+	                <td style="text-align: justify;">-</td>
                 </tr>
                 <tr>
-                <td style="text-align: justify;">Sekretaris&nbsp;II</td>
-                <td style="text-align: justify;">:</td>
-                <td style="text-align: justify;">Ir.&nbsp;Teti&nbsp;Limiati</td>
-                <td style="text-align: justify;">0819&nbsp;1181&nbsp;8092</td>
+	                <td style="text-align: justify;">Sekretaris&nbsp;II</td>
+	                <td style="text-align: justify;">:</td>
+	                <td style="text-align: justify;">Ir. Ivan Ginanjar .MT</td>
+	                <td style="text-align: justify;">-</td>
                 </tr>
                 <tr>
-                <td style="text-align: justify;">Bendahara</td>
-                <td style="text-align: justify;">:</td>
-                <td style="text-align: justify;">Chandra&nbsp;Khiharja</td>
-                <td style="text-align: justify;">0857&nbsp;9428&nbsp;8158</td>
+	                <td style="text-align: justify;">Bendahara</td>
+	                <td style="text-align: justify;">:</td>
+	                <td style="text-align: justify;">Chandra&nbsp;Khiharja</td>
+	                <td style="text-align: justify;">0857&nbsp;9428&nbsp;8158</td>
                 </tr>
                 <tr>
-                <td style="text-align: justify;">Bendahara&nbsp;I</td>
-                <td style="text-align: justify;">:</td>
-                <td style="text-align: justify;">See&nbsp;Fui&nbsp;Cien</td>
-                <td style="text-align: justify;">&nbsp;</td>
+	                <td style="text-align: justify;">Bendahara&nbsp;I</td>
+	                <td style="text-align: justify;">:</td>
+	                <td style="text-align: justify;">See&nbsp;Fui&nbsp;Cien</td>
+	                <td style="text-align: justify;">&nbsp;</td>
                 </tr>
                 <tr>
-                <td style="text-align: justify;">Bendahara&nbsp;II</td>
-                <td style="text-align: justify;">:</td>
-                <td style="text-align: justify;">Suharsono&nbsp;Janto</td>
-                <td style="text-align: justify;">&nbsp;</td>
+	                <td style="text-align: justify;">Bendahara&nbsp;II</td>
+	                <td style="text-align: justify;">:</td>
+	                <td style="text-align: justify;">Suharsono&nbsp;Janto</td>
+	                <td style="text-align: justify;">&nbsp;</td>
+                </tr>
+                <tr>
+	                <td style="text-align: justify;">Humas</td>
+	                <td style="text-align: justify;">:</td>
+	                <td style="text-align: justify;">Souw Tjo Tjin</td>
+	                <td style="text-align: justify;">&nbsp;</td>
+                </tr>
+                <tr>
+	                <td style="text-align: justify;">Humas I</td>
+	                <td style="text-align: justify;">:</td>
+	                <td style="text-align: justify;">Douwko</td>
+	                <td style="text-align: justify;">&nbsp;</td>
+                </tr>
+				<tr>
+	                <td style="text-align: justify;">Humas II</td>
+	                <td style="text-align: justify;">:</td>
+	                <td style="text-align: justify;">Yannie Sri</td>
+	                <td style="text-align: justify;">&nbsp;</td>
+                </tr>
+                <tr>
+	                <td style="text-align: justify;">Humas III</td>
+	                <td style="text-align: justify;">:</td>
+	                <td style="text-align: justify;">Angelina Mualim</td>
+	                <td style="text-align: justify;">&nbsp;</td>
                 </tr>
                 </tbody>
                 </table>

@@ -36,7 +36,8 @@ add_js(base_url('assets/js/article.js'));
             <div class="slim"
                data-label="Tarik gambar anda kesini"
                accept="image/jpeg"
-               data-size="640,640"
+               data-jpeg-compressio="100"
+               data-size="1024,748"
                data-ratio="16:9">
               <input type="file" name="slim[]"/>
             </div>
