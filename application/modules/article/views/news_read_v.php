@@ -19,14 +19,36 @@
                 </div>
               </div>
               <?php if ($article->article_type == "article"): ?>
-                <div class="article images">
-                  <img class="img-responsive" src="<?= base_url($article->article_image) ?>" />
-                </div>
+                <?php if (count($article_images) > 0): ?>
+                  <div class="photoslide widget">
+                      <div class="mid">
+    											<img src="<?= base_url($article->article_image) ?>" data-src="holder.js/80%x80" />
+                      </div>
+                      <div class="photo-carousel-wrapper">
+                          <button class="partnerslide-prev"><span class="glyphicon glyphicon-chevron-left"></span></button>
+                          <div class="photo-carousel">
+                              <ul>
+                                <?php foreach ($article_images as $key => $value): ?>
+                                  <li>
+                                  	<img src="<?= base_url($value->image_url) ?>" data-src="holder.js/80%x80" />
+                                  </li>
+                                <?php endforeach; ?>
+                              </ul>
+                          </div>
+                          <button class="partnerslide-next"><span class="glyphicon glyphicon-chevron-right"></span></button>
+                      </div>
+                  </div>
+                <?php else: ?>
+                  <div class="article images">
+                    <img class="img-responsive" src="<?= base_url($article->article_image) ?>" />
+                  </div>
+                <?php endif; ?>
               <?php else: ?>
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src="<?= $article->article_video ?>"></iframe>
                 </div>
               <?php endif; ?>
+
               <span class="article image-caption"><?= $article->article_image_caption ?></span>
               <div class="article article-content">
                 <?php echo $article->article_desc; ?>

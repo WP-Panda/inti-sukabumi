@@ -41,13 +41,6 @@ add_js(base_url('assets/js/gallery.js'));
             </div>
           </div>
         </div>
-        <div class="form-group">
-          <div class="row">
-            <div class="col-md-offset-3">
-              <button type="submit" class="btn btn-pimary">Update</button>
-            </div>
-          </div>
-        </div>
         <?php echo form_close(); ?>
       </div>
     </div>

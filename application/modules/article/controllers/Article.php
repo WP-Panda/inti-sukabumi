@@ -37,6 +37,7 @@ class Article extends UserController
     add_js(base_url('assets/js/fb.js'));
     $data['article'] = $this->article_m->get_article($article_url);
     $data['page_title'] = 'Artikel';
+    $data['article_images'] = $this->article_m->get_images_gallery($article_url);
     $data['meta']['image'] = $data['article']->article_image_thumb;
     $data['meta']['title'] = $data['article']->article_name;
     $data['meta']['desc'] = $data['article']->article_summary;
